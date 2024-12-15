@@ -1,0 +1,22 @@
+name: Test package
+
+on:
+  push:
+    branches: [ "main" ]
+  pull_request:
+    branches: [ "main" ]
+  workflow_dispatch:
+  
+jobs:
+  test:
+
+    runs-on: macos-latest
+
+    steps:
+    - uses: actions/checkout@v4
+      with:
+        submodules: true
+    - name: Build
+      run: swift build
+    - name: Run tests
+      run: .build/debug/CVorbisTests

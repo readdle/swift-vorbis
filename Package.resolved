@@ -1,0 +1,16 @@
+{
+  "object": {
+    "pins": [
+      {
+        "package": "swift-ogg",
+        "repositoryURL": "https://github.com/readdle/swift-ogg.git",
+        "state": {
+          "branch": null,
+          "revision": "48bb006ce827b375c69b099c0b19cd9c3709838d",
+          "version": "1.3.5"
+        }
+      }
+    ]
+  },
+  "version": 1
+}
